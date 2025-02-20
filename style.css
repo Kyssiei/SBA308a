@@ -1,3 +1,23 @@
 body{
+    background-color: rgb(255, 165, 206);
+}
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(38, 37, 37);
+    height: 700px;
+    border-radius: 25px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: right;
     background-color: black;
+    height: 700px;
+    width: 1050px;
+    border-radius: 25px;
 }
