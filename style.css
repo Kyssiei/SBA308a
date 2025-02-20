@@ -9,15 +9,38 @@ body{
     height: 700px;
     border-radius: 25px;
 }
-
 .mainContainer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin-left: auto;
     align-items: right;
+    flex-wrap: wrap;
     background-color: black;
     height: 700px;
-    width: 1050px;
+    width: 85%;
     border-radius: 25px;
+}
+.sideBar{
+    /* background-color: rgb(255, 113, 193); */
+    width: 15%;
+    border-top-left-radius: 25px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: auto ;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 25px;
+    height: auto;
+}
+h1{
+    color: white;
+    text-align: center;
+    width: 25%;
+}
+#searchBar{
+    /* border: 2px solid blue;
+    border-color: blue; */
 }
