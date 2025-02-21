@@ -12,10 +12,12 @@ body{
 .mainContainer{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin-left: auto;
-    align-items: right;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: flex-end; */
+    /* margin-left: auto; */
+    /* align-items: right; */
+    /* flex-wrap: wrap; */
     background-color: black;
     height: 700px;
     width: 85%;
@@ -41,6 +43,31 @@ h1{
     width: 25%;
 }
 #searchBar{
+    height: 30px;
+    align-self: center;
+    width: 25%;
+    margin-left: 45%;
+    border-radius: 20px;
+    text-align: start;
+
+
     /* border: 2px solid blue;
     border-color: blue; */
 }
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+/* .banner{
+    display: flex;
+    margin-bottom: auto;
+    background-image: url(https://i.pinimg.com/736x/0a/ab/3b/0aab3b6e97e244a5c7ff988319d3e918.jpg);
+    width: 65%;
+    height: 40%;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: aqua;
+} */
