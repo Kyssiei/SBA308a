@@ -13,4 +13,33 @@ export async function fetchtrendingSongs() {
         console.error("Error Finding Song");
         return[];
     }
+};
+
+export async function musicSearch() {
+    try {
+        const musicSearch = await fetch(`${AudiomackApi}/search`);
+        if (!musicSearch.ok) 
+            throw new Error("Couldnt find song");
+            const data1 = await response.json();
+            return data1.results;
+        
+    } catch (error) {
+        console.error("Couldnt find song");
+        return[];
+    }
+};
+
+
+export async function artistsUploads() {
+    try {
+        const artistsUploads = await fetch (`${AudiomackApi}/v1/artist/(artist slug)/uploads`);
+        if(!artistsUploads.ok)
+            throw new Error("Werent able to find artist");
+            const data2 = await response.json();
+            return data2.results;
+        
+    } catch (error) {
+        console.error("couldnt find artist");
+        return[];
+    }
 }
